@@ -1,0 +1,30 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  animate.c
+  compare.c
+  composite.c
+  conjure.c
+  convert.c
+  deprecate.c
+  display.c
+  drawing-wand.c
+  identify.c
+  import.c
+  magick-cli.c
+  magick-image.c
+  magick-property.c
+  magick-wand.c
+  mogrify.c
+  montage.c
+  operation.c
+  pixel-iterator.c
+D:\imagemagick-windows\ImageMagick\MagickWand\mogrify.c(4025): warning C4456: declaration of 'filename' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickWand\mogrify.c(3975): note: see declaration of 'filename'
+D:\imagemagick-windows\ImageMagick\MagickWand\operation.c(1790): warning C4456: declaration of 'geometry' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickWand\operation.c(1676): note: see declaration of 'geometry'
+  pixel-wand.c
+  script-token.c
+  stream.c
+  wand-view.c
+  wand.c
+  wandcli.c
+  CORE_MagickWand_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\MagickWand\..\lib\CORE_DB_MagickWand_.lib

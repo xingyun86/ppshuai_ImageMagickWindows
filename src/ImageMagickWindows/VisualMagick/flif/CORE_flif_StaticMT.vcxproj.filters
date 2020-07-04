@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\flif\extern\lodepng.cpp">
+      <Filter>extern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\common.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\flif-dec.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\flif-enc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\io.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\image\color_range.cpp">
+      <Filter>src\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\image\crc32k.cpp">
+      <Filter>src\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\library\flif-interface_common.cpp">
+      <Filter>src\library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\library\flif-interface_dec.cpp">
+      <Filter>src\library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\library\flif-interface_enc.cpp">
+      <Filter>src\library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\maniac\bit.cpp">
+      <Filter>src\maniac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\maniac\chance.cpp">
+      <Filter>src\maniac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\maniac\symbol.cpp">
+      <Filter>src\maniac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\flif\src\transform\factory.cpp">
+      <Filter>src\transform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\flif\extern\lodepng.h">
+      <Filter>extern</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\flif\extern\stb_image.h">
+      <Filter>extern</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\flif\extern\stb_image_write.h">
+      <Filter>extern</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\flif\src\config.h">
+      <Filter>src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\flif\src\flif_config.h">
+      <Filter>src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\flif\src\library\flif.h">
+      <Filter>src\library</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\flif\src\library\flif_common.h">
+      <Filter>src\library</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\flif\src\library\flif_dec.h">
+      <Filter>src\library</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\flif\src\library\flif_enc.h">
+      <Filter>src\library</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="extern">
+      <UniqueIdentifier>{570BF191-A48B-469A-BC20-247B617D9B91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{0C899CC6-9496-47EC-86CE-62BADDE99B50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\image">
+      <UniqueIdentifier>{3B6E39B7-C26E-4267-8A32-83F9E88D183F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\library">
+      <UniqueIdentifier>{87291148-F473-4541-8124-DAC043291F7E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\maniac">
+      <UniqueIdentifier>{E93AB7B9-A781-4AFC-9EED-D7EDB71D1EBC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\transform">
+      <UniqueIdentifier>{4CF15718-6688-40F5-A4FA-6FF62CBE3CC1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\flif\src\ImageMagick\Resource.rc" />
+  </ItemGroup>
+</Project>

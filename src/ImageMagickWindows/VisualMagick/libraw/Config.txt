@@ -1,0 +1,17 @@
+[DLL]
+
+[DEFINES]
+LIBRAW_BUILDLIB
+
+[DIRECTORIES]
+..\..\libraw\internal
+..\..\libraw\src
+
+[INCLUDES]
+..\..\libraw
+
+[CONFIG_DEFINE]
+/*
+  Define to use the Raw library
+*/
+#define MAGICKCORE_RAW_R_DELEGATE

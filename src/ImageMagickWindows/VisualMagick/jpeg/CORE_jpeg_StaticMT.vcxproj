@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_jpeg</ProjectName>
+    <ProjectGuid>{2AEA006D-9EAD-419E-9671-6B31A9A9037A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CORE_DB_jpeg_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CORE_RL_jpeg_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Debug\StaticMT-Win32\CORE_jpeg\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Release\StaticMT-Win32\CORE_jpeg\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFile>..\bin\CORE_DB_jpeg_.pdb</ProgramDatabaseFile>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\jpeg;..\..\jpeg\simd\i386;..\..\jpeg\simd\x86_64;..\..\VisualMagick\OpenCL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;WITH_SIMD;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X86;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFile>..\bin\CORE_RL_jpeg_.pdb</ProgramDatabaseFile>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>;..\..\jpeg;..\..\jpeg\simd\i386;..\..\jpeg\simd\x86_64;..\..\VisualMagick\OpenCL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;WITH_SIMD;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X86;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\jpeg\jaricom.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcapimin.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcapistd.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcarith.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jccoefct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jccolor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcdctmgr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jchuff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcicc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcinit.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcmainct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcmarker.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcmaster.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcomapi.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcparam.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcphuff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcprepct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jcsample.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jctrans.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdapimin.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdapistd.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdarith.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdatadst.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdatasrc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdcoefct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdcolor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jddctmgr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdhuff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdicc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdinput.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdmainct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdmarker.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdmaster.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdmerge.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdphuff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdpostct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdsample.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jdtrans.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jerror.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jfdctflt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jfdctfst.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jfdctint.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jidctflt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jidctfst.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jidctint.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jidctred.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jmemmgr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jmemnobs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jquant1.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jquant2.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\jutils.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\jpeg\transupp.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jccolor-avx2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jccolor-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jccolor-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jcgray-avx2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jcgray-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jcgray-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jchuff-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jcphuff-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jcsample-avx2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jcsample-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jcsample-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jdcolor-avx2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jdcolor-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jdcolor-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jdmerge-avx2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jdmerge-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jdmerge-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jdsample-avx2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jdsample-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jdsample-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jfdctflt-3dn.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jfdctflt-sse.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jfdctfst-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jfdctfst-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jfdctint-avx2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jfdctint-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jfdctint-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jidctflt-3dn.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jidctflt-sse.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jidctflt-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jidctfst-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jidctfst-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jidctint-avx2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jidctint-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jidctint-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jidctred-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jidctred-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jquant-3dn.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jquant-mmx.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jquant-sse.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jquantf-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jquanti-avx2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jquanti-sse2.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\jpeg\simd\i386\jsimd.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <CustomBuild Include="..\..\jpeg\simd\i386\jsimdcpu.asm">
+      <Command>..\build\nasm -fwin32 -DWIN32 -I..\..\jpeg\simd\i386\ -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\jpeg\cderror.h" />
+    <ClInclude Include="..\..\jpeg\cmyk.h" />
+    <ClInclude Include="..\..\jpeg\jchuff.h" />
+    <ClInclude Include="..\..\jpeg\jconfig.h" />
+    <ClInclude Include="..\..\jpeg\jconfigint.h" />
+    <ClInclude Include="..\..\jpeg\jdcoefct.h" />
+    <ClInclude Include="..\..\jpeg\jdct.h" />
+    <ClInclude Include="..\..\jpeg\jdhuff.h" />
+    <ClInclude Include="..\..\jpeg\jdmainct.h" />
+    <ClInclude Include="..\..\jpeg\jdmaster.h" />
+    <ClInclude Include="..\..\jpeg\jdsample.h" />
+    <ClInclude Include="..\..\jpeg\jerror.h" />
+    <ClInclude Include="..\..\jpeg\jinclude.h" />
+    <ClInclude Include="..\..\jpeg\jmemsys.h" />
+    <ClInclude Include="..\..\jpeg\jmorecfg.h" />
+    <ClInclude Include="..\..\jpeg\jpegcomp.h" />
+    <ClInclude Include="..\..\jpeg\jpegint.h" />
+    <ClInclude Include="..\..\jpeg\jpeglib.h" />
+    <ClInclude Include="..\..\jpeg\jpeg_nbits_table.h" />
+    <ClInclude Include="..\..\jpeg\jsimd.h" />
+    <ClInclude Include="..\..\jpeg\jsimddct.h" />
+    <ClInclude Include="..\..\jpeg\jversion.h" />
+    <ClInclude Include="..\..\jpeg\transupp.h" />
+    <ClInclude Include="..\..\jpeg\simd\i386\jsimdcfg.inc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\jpeg\ImageMagick\Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

@@ -1,0 +1,21 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  Blob.cpp
+  BlobRef.cpp
+  CoderInfo.cpp
+  Color.cpp
+  Drawable.cpp
+  Exception.cpp
+  Functions.cpp
+  Geometry.cpp
+  Image.cpp
+  ImageRef.cpp
+  Montage.cpp
+  Options.cpp
+  Pixels.cpp
+  ResourceLimits.cpp
+  SecurityPolicy.cpp
+  Statistic.cpp
+  STL.cpp
+  Thread.cpp
+  TypeMetric.cpp
+  CORE_Magick++_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\Magick++\..\lib\CORE_DB_Magick++_.lib

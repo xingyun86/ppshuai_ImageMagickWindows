@@ -1,0 +1,6 @@
+[INCLUDES]
+..\..\libheif
+..\..\libheif\libheif
+
+[DEPENDENCIES]
+libheif

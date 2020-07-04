@@ -1,0 +1,28 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  cmsalpha.c
+  cmscam02.c
+  cmscgats.c
+  cmscnvrt.c
+  cmserr.c
+  cmsgamma.c
+  cmsgmt.c
+  cmshalf.c
+  cmsintrp.c
+  cmsio0.c
+  cmsio1.c
+  cmslut.c
+  cmsmd5.c
+  cmsmtrx.c
+  cmsnamed.c
+  cmsopt.c
+  cmspack.c
+  cmspcs.c
+  cmsplugin.c
+  cmsps2.c
+  cmssamp.c
+  cmssm.c
+  cmstypes.c
+  cmsvirt.c
+  cmswtpnt.c
+  cmsxform.c
+  CORE_lcms_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\lcms\..\lib\CORE_DB_lcms_.lib

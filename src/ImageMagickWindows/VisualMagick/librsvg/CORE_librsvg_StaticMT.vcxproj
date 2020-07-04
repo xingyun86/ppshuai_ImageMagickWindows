@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_librsvg</ProjectName>
+    <ProjectGuid>{ADCD6DA2-149C-49A8-8347-1DA8D281AFA5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CORE_DB_librsvg_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CORE_RL_librsvg_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Debug\StaticMT-Win32\CORE_librsvg\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Release\StaticMT-Win32\CORE_librsvg\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFile>..\bin\CORE_DB_librsvg_.pdb</ProgramDatabaseFile>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\librsvg;..\..\librsvg\gdk-pixbuf;..\..\librsvg\gdk-pixbuf\gdk-pixbuf;..\..\librsvg\gdk-pixbuf\gdk-pixbuf\pixops;..\..\librsvg\gdk-pixbuf-loader;..\..\cairo\src;..\..\croco\src;..\..\glib;..\..\glib\glib;..\..\glib\gmodule;..\..\jp2\src\libjasper\include;..\..\jpeg;..\..\libxml\include;..\..\pango;..\..\png;..\..\tiff\libtiff;..\..\VisualMagick\OpenCL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;GDK_PIXBUF_ENABLE_BACKEND;RSVG_COMPILATION;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X86;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFile>..\bin\CORE_RL_librsvg_.pdb</ProgramDatabaseFile>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>;..\..\librsvg;..\..\librsvg\gdk-pixbuf;..\..\librsvg\gdk-pixbuf\gdk-pixbuf;..\..\librsvg\gdk-pixbuf\gdk-pixbuf\pixops;..\..\librsvg\gdk-pixbuf-loader;..\..\cairo\src;..\..\croco\src;..\..\glib;..\..\glib\glib;..\..\glib\gmodule;..\..\jp2\src\libjasper\include;..\..\jpeg;..\..\libxml\include;..\..\pango;..\..\png;..\..\tiff\libtiff;..\..\VisualMagick\OpenCL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;GDK_PIXBUF_ENABLE_BACKEND;RSVG_COMPILATION;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X86;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\librsvg\librsvg-enum-types.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\librsvg-features.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-base-file-util.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-base.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-cairo-clip.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-cairo-draw.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-cairo-render.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-cond.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-css.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-defs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-filter.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-gobject.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-image.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-io.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-marker.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-mask.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-paint-server.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-path.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-shapes.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-size-callback.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-structure.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-styles.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-text.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg-xml.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\rsvg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-animation.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-buffer-queue.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-data.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-enum-types.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-io.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-loader.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-marshal.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-pixdata.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-scale.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-scaled-anim.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-simple-anim.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-util.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixdata.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-ani-animation.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-ani.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-bmp.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-gif-animation.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-gif.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-icns.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-ico.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-jasper.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-jpeg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-png.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-pnm.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-qtif.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-tga.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-tiff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-xbm.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-xpm.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\pixops\pixops.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf-loader\io-svg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\librsvg\config.h" />
+    <ClInclude Include="..\..\librsvg\librsvg-enum-types.h" />
+    <ClInclude Include="..\..\librsvg\librsvg-features.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-cairo-clip.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-cairo-draw.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-cairo-render.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-cairo.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-compat.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-css.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-defs.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-filter.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-image.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-io.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-marker.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-mask.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-paint-server.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-path.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-private.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-shapes.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-size-callback.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-structure.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-styles.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-text.h" />
+    <ClInclude Include="..\..\librsvg\rsvg-xml.h" />
+    <ClInclude Include="..\..\librsvg\rsvg.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\config.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-animation.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-autocleanups.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-buffer-queue-private.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-core.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-enum-types.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-features.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-io.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-loader.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-macros.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-marshal.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-private.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-scaled-anim.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-simple-anim.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-transform.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixdata.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-ani-animation.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-gdip-native.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-gdip-propertytags.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-gif-animation.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\xpm-color-table.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\pixops\pixops-internal.h" />
+    <ClInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\pixops\pixops.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\librsvg\ImageMagick\Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cairo\CORE_cairo_StaticMT.vcxproj">
+      <Project>{A292F63F-2F34-47D3-BDBB-E45C0CD83A10}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\croco\CORE_croco_StaticMT.vcxproj">
+      <Project>{5E44B433-96DC-4EC1-8C93-941575E6B8EE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\glib\CORE_glib_StaticMT.vcxproj">
+      <Project>{4AD965D5-569B-4DD4-B5FF-652F8102D52E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\jp2\CORE_jp2_StaticMT.vcxproj">
+      <Project>{49529994-8FD4-477C-B316-AEF88BE86AFC}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\jpeg\CORE_jpeg_StaticMT.vcxproj">
+      <Project>{2AEA006D-9EAD-419E-9671-6B31A9A9037A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libxml\CORE_libxml_StaticMT.vcxproj">
+      <Project>{CAF6A110-97C6-4BA5-BCAB-7BA77294AC21}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\pango\CORE_pango_StaticMT.vcxproj">
+      <Project>{3C84FF8E-D140-4843-B363-987C6E865427}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\png\CORE_png_StaticMT.vcxproj">
+      <Project>{63BF747F-7612-4CA0-9DF3-2A8EAC7C5707}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\tiff\CORE_tiff_StaticMT.vcxproj">
+      <Project>{ADD36F5F-76BE-46E4-861E-83F1BEDD84CE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

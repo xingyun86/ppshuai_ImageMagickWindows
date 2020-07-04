@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\win2k\IMDisplay\ChildFrm.cpp">
+      <Filter>IMDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win2k\IMDisplay\IMDisplay.cpp">
+      <Filter>IMDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win2k\IMDisplay\IMDisplayDoc.cpp">
+      <Filter>IMDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win2k\IMDisplay\IMDisplayView.cpp">
+      <Filter>IMDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win2k\IMDisplay\MainFrm.cpp">
+      <Filter>IMDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win2k\IMDisplay\ResizeDialog.cpp">
+      <Filter>IMDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win2k\IMDisplay\RollDialog.cpp">
+      <Filter>IMDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win2k\IMDisplay\RotateDialog.cpp">
+      <Filter>IMDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win2k\IMDisplay\ShearDialog.cpp">
+      <Filter>IMDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win2k\IMDisplay\StdAfx.cpp">
+      <Filter>IMDisplay</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\win2k\IMDisplay\ChildFrm.h">
+      <Filter>IMDisplay</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\win2k\IMDisplay\IMDisplay.h">
+      <Filter>IMDisplay</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\win2k\IMDisplay\IMDisplayDoc.h">
+      <Filter>IMDisplay</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\win2k\IMDisplay\IMDisplayView.h">
+      <Filter>IMDisplay</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\win2k\IMDisplay\MainFrm.h">
+      <Filter>IMDisplay</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\win2k\IMDisplay\ResizeDialog.h">
+      <Filter>IMDisplay</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\win2k\IMDisplay\Resource.h">
+      <Filter>IMDisplay</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\win2k\IMDisplay\RollDialog.h">
+      <Filter>IMDisplay</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\win2k\IMDisplay\RotateDialog.h">
+      <Filter>IMDisplay</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\win2k\IMDisplay\ShearDialog.h">
+      <Filter>IMDisplay</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\win2k\IMDisplay\StdAfx.h">
+      <Filter>IMDisplay</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="IMDisplay">
+      <UniqueIdentifier>{CC4FACB9-796A-41C8-8366-C0FF29DD9C3E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\win2k\IMDisplay\IMDisplay.rc" />
+  </ItemGroup>
+</Project>

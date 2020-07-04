@@ -1,0 +1,177 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  aai.c
+  art.c
+  ashlar.c
+  avs.c
+  bgr.c
+  bmp.c
+  braille.c
+  cals.c
+  caption.c
+  cin.c
+  cip.c
+  clip.c
+  clipboard.c
+  cmyk.c
+  cube.c
+  cut.c
+  dcm.c
+D:\imagemagick-windows\ImageMagick\coders\cube.c(205): warning C4456: declaration of 'q' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\cube.c(166): note: see declaration of 'q'
+  dds.c
+  debug.c
+  dib.c
+D:\imagemagick-windows\ImageMagick\coders\dib.c(936): warning C4456: declaration of 'x' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\dib.c(477): note: see declaration of 'x'
+D:\imagemagick-windows\ImageMagick\coders\dcm.c(3997): warning C4456: declaration of 'offset' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\dcm.c(3053): note: see declaration of 'offset'
+  djvu.c
+  dng.c
+  dot.c
+  dps.c
+  dpx.c
+  ept.c
+  exr.c
+  fax.c
+  fits.c
+  flif.c
+  fpx.c
+  gif.c
+  gradient.c
+  gray.c
+  hald.c
+  hdr.c
+  heic.c
+  histogram.c
+D:\imagemagick-windows\ImageMagick\coders\hdr.c(212): warning C4456: declaration of 'p' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\hdr.c(164): note: see declaration of 'p'
+  hrz.c
+  html.c
+  icon.c
+  info.c
+  inline.c
+  ipl.c
+  jbig.c
+  jnx.c
+  jp2.c
+  jpeg.c
+  json.c
+  jxl.c
+  label.c
+  mac.c
+  magick.c
+D:\imagemagick-windows\ImageMagick\coders\json.c(368): warning C4456: declaration of 'i' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\json.c(322): note: see declaration of 'i'
+  map.c
+  mask.c
+  mat.c
+  matte.c
+  meta.c
+  miff.c
+  mono.c
+  mpc.c
+D:\imagemagick-windows\ImageMagick\coders\meta.c(354): warning C4456: declaration of 'state' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\meta.c(306): note: see declaration of 'state'
+  mpeg.c
+D:\imagemagick-windows\ImageMagick\coders\miff.c(1493): warning C4701: potentially uninitialized local variable 'lzma_info' used
+  mpr.c
+  msl.c
+D:\imagemagick-windows\ImageMagick\coders\mpc.c(234): warning C4456: declaration of 'p' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\mpc.c(154): note: see declaration of 'p'
+  mtv.c
+  mvg.c
+  null.c
+D:\imagemagick-windows\ImageMagick\coders\msl.c(1819): warning C4456: declaration of 'attribute' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\msl.c(625): note: see declaration of 'attribute'
+  otb.c
+  palm.c
+  pango.c
+  pattern.c
+  pcd.c
+D:\imagemagick-windows\ImageMagick\coders\palm.c(363): warning C4456: declaration of 'index' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\palm.c(249): note: see declaration of 'index'
+  pcl.c
+  pcx.c
+  pdb.c
+  pdf.c
+  pes.c
+  pgx.c
+D:\imagemagick-windows\ImageMagick\coders\pdb.c(590): warning C4456: declaration of 'p' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\pdb.c(298): note: see declaration of 'p'
+  pict.c
+D:\imagemagick-windows\ImageMagick\coders\pdf.c(2232): warning C4456: declaration of 'p' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\pdf.c(1249): note: see declaration of 'p'
+  pix.c
+  plasma.c
+  png.c
+D:\imagemagick-windows\ImageMagick\coders\pict.c(1145): warning C4456: declaration of 'j' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\pict.c(874): note: see declaration of 'j'
+  pnm.c
+  ps.c
+  ps2.c
+  ps3.c
+  psd.c
+D:\imagemagick-windows\ImageMagick\coders\ps.c(1600): warning C4456: declaration of 'pixel' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\ps.c(1360): note: see declaration of 'pixel'
+  pwp.c
+  raw.c
+D:\imagemagick-windows\ImageMagick\coders\ps3.c(1152): warning C4456: declaration of 'value' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\ps3.c(824): note: see declaration of 'value'
+  rgb.c
+  rgf.c
+  rla.c
+  rle.c
+  scr.c
+  screenshot.c
+  sct.c
+  sfw.c
+  sgi.c
+  sixel.c
+  stegano.c
+  sun.c
+D:\imagemagick-windows\ImageMagick\coders\sgi.c(1047): warning C4456: declaration of 'q' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\sgi.c(934): note: see declaration of 'q'
+  svg.c
+D:\imagemagick-windows\ImageMagick\coders\sixel.c(742): warning C4819: The file contains a character that cannot be represented in the current code page (0). Save the file in Unicode format to prevent data loss
+  tga.c
+  thumbnail.c
+  tiff.c
+  tile.c
+  tim.c
+D:\imagemagick-windows\ImageMagick\coders\svg.c(925): warning C4457: declaration of 'style' hides function parameter
+  D:\imagemagick-windows\ImageMagick\coders\svg.c(804): note: see declaration of 'style'
+D:\imagemagick-windows\ImageMagick\coders\svg.c(1671): warning C4456: declaration of 'p' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\svg.c(1248): note: see declaration of 'p'
+D:\imagemagick-windows\ImageMagick\coders\tiff.c(2143): warning C4456: declaration of 'pixels' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\tiff.c(1356): note: see declaration of 'pixels'
+  tim2.c
+  ttf.c
+  txt.c
+  uil.c
+  url.c
+  uyvy.c
+  vicar.c
+  vid.c
+  viff.c
+  vips.c
+  wbmp.c
+  webp.c
+D:\imagemagick-windows\ImageMagick\coders\viff.c(1196): warning C4456: declaration of 'x' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\viff.c(957): note: see declaration of 'x'
+  wpg.c
+  xbm.c
+  xc.c
+D:\imagemagick-windows\ImageMagick\coders\webp.c(281): warning C4701: potentially uninitialized local variable 'canvas_width' used
+D:\imagemagick-windows\ImageMagick\coders\webp.c(282): warning C4701: potentially uninitialized local variable 'canvas_height' used
+  xcf.c
+  xpm.c
+  xps.c
+  xtrn.c
+  ycbcr.c
+D:\imagemagick-windows\ImageMagick\coders\xpm.c(482): warning C4456: declaration of 'count' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\xpm.c(282): note: see declaration of 'count'
+  yuv.c
+D:\imagemagick-windows\ImageMagick\coders\yuv.c(241): warning C4456: declaration of 'chroma_pixels' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\coders\yuv.c(113): note: see declaration of 'chroma_pixels'
+  emf.c
+  CORE_coders_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\coders\..\lib\CORE_DB_coders_.lib

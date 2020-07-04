@@ -1,0 +1,73 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  getopt.c
+  getopt_long.c
+  win32cond.c
+  alloc_pool.cc
+  bitstream.cc
+  cabac.cc
+  configparam.cc
+  contextmodel.cc
+  de265.cc
+  deblock.cc
+  decctx.cc
+  dpb.cc
+  en265.cc
+  fallback-dct.cc
+  fallback-motion.cc
+  fallback.cc
+  image-io.cc
+  image.cc
+  intrapred.cc
+  md5.cc
+  motion.cc
+  nal-parser.cc
+  nal.cc
+  pps.cc
+  quality.cc
+  refpic.cc
+  sao.cc
+  scan.cc
+  sei.cc
+  slice.cc
+  sps.cc
+  threads.cc
+  transform.cc
+  util.cc
+  visualize.cc
+  vps.cc
+  vui.cc
+  encoder-context.cc
+  encoder-core.cc
+  encoder-intrapred.cc
+  encoder-motion.cc
+  encoder-params.cc
+  encoder-syntax.cc
+  encoder-types.cc
+  encpicbuf.cc
+  sop.cc
+  algo.cc
+  cb-interpartmode.cc
+  cb-intra-inter.cc
+  cb-intrapartmode.cc
+  cb-mergeindex.cc
+  cb-skip.cc
+  cb-split.cc
+  coding-options.cc
+  ctb-qscale.cc
+  pb-mv.cc
+  tb-intrapredmode.cc
+  tb-rateestim.cc
+  tb-split.cc
+  tb-transform.cc
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\utility(208): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file ..\..\libde265\libde265\encoder\algo\tb-intrapredmode.cc)
+  D:\imagemagick-windows\libde265\libde265\encoder\algo\tb-intrapredmode.cc(459): note: see reference to function template instantiation 'std::pair<IntraPredMode,float>::pair<IntraPredMode,int,0>(std::pair<IntraPredMode,int> &&) noexcept' being compiled
+  D:\imagemagick-windows\libde265\libde265\encoder\algo\tb-intrapredmode.cc(459): note: see reference to function template instantiation 'std::pair<IntraPredMode,float>::pair<IntraPredMode,int,0>(std::pair<IntraPredMode,int> &&) noexcept' being compiled
+  CORE_libde265_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\libde265\..\lib\CORE_DB_libde265_.lib

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\contrib\win32\ATL7\ImageMagickObject\ImageMagickObject.cpp">
+      <Filter>win32\ATL7\ImageMagickObject</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\contrib\win32\ATL7\ImageMagickObject\ImageMagickObjectRes.h">
+      <Filter>win32\ATL7\ImageMagickObject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\contrib\win32\ATL7\ImageMagickObject\ImageMagickObject_.h">
+      <Filter>win32\ATL7\ImageMagickObject</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="win32\ATL7\ImageMagickObject">
+      <UniqueIdentifier>{2EDF89A2-ED0C-45F3-9253-F6EB00EDCB4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32\ATL7">
+      <UniqueIdentifier>{85982D0A-217B-40A1-A1D3-13C2C9B5D902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{A948E2D6-6D59-46F1-B798-8005B4948E1A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

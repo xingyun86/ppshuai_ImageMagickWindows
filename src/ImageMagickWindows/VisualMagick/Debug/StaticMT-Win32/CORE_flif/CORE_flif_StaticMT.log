@@ -1,0 +1,16 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  lodepng.cpp
+  common.cpp
+  flif-dec.cpp
+  flif-enc.cpp
+  io.cpp
+  color_range.cpp
+  crc32k.cpp
+  flif-interface_common.cpp
+  flif-interface_dec.cpp
+  flif-interface_enc.cpp
+  bit.cpp
+  chance.cpp
+  symbol.cpp
+  factory.cpp
+  CORE_flif_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\flif\..\lib\CORE_DB_flif_.lib

@@ -1,0 +1,37 @@
+[DLL]
+
+[DEFINES]
+HAVE_AOM
+HAVE_LIBDE265
+LIBDE265_STATIC_BUILD
+
+[DEFINES_LIB]
+LIBHEIF_STATIC_BUILD
+
+[DEFINES_DLL]
+LIBHEIF_EXPORTS
+
+[DIRECTORIES]
+..\..\libheif\libheif
+
+[INCLUDES]
+..\..\aom
+..\..\libde265
+..\..\libheif
+
+[EXCLUDES]
+box_fuzzer.cc
+encoder_fuzzer.cc
+file_fuzzer.cc
+heif_encoder_aom.cc
+heif_encoder_x265.cc
+
+[DEPENDENCIES]
+aom
+libde265
+
+[CONFIG_DEFINE]
+/*
+  Define to use the libheif library
+*/
+#define MAGICKCORE_HEIC_DELEGATE

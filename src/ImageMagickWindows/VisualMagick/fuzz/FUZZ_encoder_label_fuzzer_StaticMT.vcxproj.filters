@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\ImageMagick\Magick++\fuzz\encoder_label_fuzzer.cc">
+      <Filter>Magick++\fuzz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\fuzz\main.cc">
+      <Filter>Magick++\fuzz</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Magick++\fuzz">
+      <UniqueIdentifier>{E2444808-3F60-40D9-A62D-9D5ABB60544B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Magick++">
+      <UniqueIdentifier>{4FE5AC26-6AB7-4A81-A869-9803DAF4D46F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

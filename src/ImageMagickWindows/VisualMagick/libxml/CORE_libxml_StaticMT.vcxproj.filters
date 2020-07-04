@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\libxml\buf.c" />
+    <ClCompile Include="..\..\libxml\c14n.c" />
+    <ClCompile Include="..\..\libxml\catalog.c" />
+    <ClCompile Include="..\..\libxml\chvalid.c" />
+    <ClCompile Include="..\..\libxml\debugXML.c" />
+    <ClCompile Include="..\..\libxml\dict.c" />
+    <ClCompile Include="..\..\libxml\DOCBparser.c" />
+    <ClCompile Include="..\..\libxml\encoding.c" />
+    <ClCompile Include="..\..\libxml\entities.c" />
+    <ClCompile Include="..\..\libxml\error.c" />
+    <ClCompile Include="..\..\libxml\globals.c" />
+    <ClCompile Include="..\..\libxml\hash.c" />
+    <ClCompile Include="..\..\libxml\HTMLparser.c" />
+    <ClCompile Include="..\..\libxml\HTMLtree.c" />
+    <ClCompile Include="..\..\libxml\legacy.c" />
+    <ClCompile Include="..\..\libxml\list.c" />
+    <ClCompile Include="..\..\libxml\parser.c" />
+    <ClCompile Include="..\..\libxml\parserInternals.c" />
+    <ClCompile Include="..\..\libxml\pattern.c" />
+    <ClCompile Include="..\..\libxml\relaxng.c" />
+    <ClCompile Include="..\..\libxml\SAX.c" />
+    <ClCompile Include="..\..\libxml\SAX2.c" />
+    <ClCompile Include="..\..\libxml\schematron.c" />
+    <ClCompile Include="..\..\libxml\threads.c" />
+    <ClCompile Include="..\..\libxml\tree.c" />
+    <ClCompile Include="..\..\libxml\uri.c" />
+    <ClCompile Include="..\..\libxml\valid.c" />
+    <ClCompile Include="..\..\libxml\xinclude.c" />
+    <ClCompile Include="..\..\libxml\xlink.c" />
+    <ClCompile Include="..\..\libxml\xmlIO.c" />
+    <ClCompile Include="..\..\libxml\xmlmemory.c" />
+    <ClCompile Include="..\..\libxml\xmlmodule.c" />
+    <ClCompile Include="..\..\libxml\xmlreader.c" />
+    <ClCompile Include="..\..\libxml\xmlregexp.c" />
+    <ClCompile Include="..\..\libxml\xmlsave.c" />
+    <ClCompile Include="..\..\libxml\xmlschemas.c" />
+    <ClCompile Include="..\..\libxml\xmlschemastypes.c" />
+    <ClCompile Include="..\..\libxml\xmlstring.c" />
+    <ClCompile Include="..\..\libxml\xmlunicode.c" />
+    <ClCompile Include="..\..\libxml\xmlwriter.c" />
+    <ClCompile Include="..\..\libxml\xpointer.c" />
+    <ClCompile Include="..\..\libxml\xzlib.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\libxml\buf.h" />
+    <CLInclude Include="..\..\libxml\config.h" />
+    <CLInclude Include="..\..\libxml\elfgcchack.h" />
+    <CLInclude Include="..\..\libxml\enc.h" />
+    <CLInclude Include="..\..\libxml\libxml.h" />
+    <CLInclude Include="..\..\libxml\save.h" />
+    <CLInclude Include="..\..\libxml\timsort.h" />
+    <CLInclude Include="..\..\libxml\triodef.h" />
+    <CLInclude Include="..\..\libxml\triop.h" />
+    <CLInclude Include="..\..\libxml\xzlib.h" />
+    <CLInclude Include="..\..\libxml\include\win32config.h">
+      <Filter>include</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\wsockcompat.h">
+      <Filter>include</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\c14n.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\catalog.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\chvalid.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\debugXML.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\dict.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\DOCBparser.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\encoding.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\entities.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\globals.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\hash.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\HTMLparser.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\HTMLtree.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\list.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\parser.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\parserInternals.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\pattern.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\relaxng.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\SAX.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\SAX2.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\schemasInternals.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\schematron.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\threads.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\tree.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\uri.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\valid.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xinclude.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xlink.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlautomata.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlerror.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlexports.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlIO.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlmemory.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlmodule.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlreader.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlregexp.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlsave.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlschemas.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlschemastypes.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlstring.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlunicode.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlversion.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xmlwriter.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xpathInternals.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libxml\include\libxml\xpointer.h">
+      <Filter>include\libxml</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{537423CA-8660-4B2F-997B-1C4A559C1807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\libxml">
+      <UniqueIdentifier>{17CA6BDF-98BC-4D7E-B6DA-BE20D522AF8D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\libxml\ImageMagick\Resource.rc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,24 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  bio.c
+  cio.c
+  dwt.c
+  event.c
+  function_list.c
+  image.c
+  invert.c
+  j2k.c
+  jp2.c
+  mct.c
+  mqc.c
+  openjpeg.c
+  opj_clock.c
+  opj_malloc.c
+  pi.c
+  sparse_array.c
+  t1.c
+  t2.c
+  tcd.c
+  test_sparse_array.c
+  tgt.c
+  thread.c
+  CORE_openjpeg_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\openjpeg\..\lib\CORE_DB_openjpeg_.lib

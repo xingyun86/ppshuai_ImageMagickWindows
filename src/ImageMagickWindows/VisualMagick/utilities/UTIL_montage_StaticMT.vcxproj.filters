@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\ImageMagick\utilities\magick.c">
+      <Filter>utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\utilities\Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{65CDB935-018A-410B-A5D4-3B8C106BD33A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

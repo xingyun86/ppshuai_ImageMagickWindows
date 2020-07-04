@@ -1,0 +1,17 @@
+[STATIC]
+
+[DEFINES]
+HAVE_STDINT_H
+
+[DEFINES]
+LIBDE265_STATIC_BUILD
+
+[DIRECTORIES]
+..\..\libde265\extra
+..\..\libde265\libde265
+..\..\libde265\libde265\encoder
+..\..\libde265\libde265\encoder\algo
+
+[INCLUDES]
+..\..\libde265
+..\..\libde265\libde265

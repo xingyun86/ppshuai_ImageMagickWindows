@@ -1,0 +1,59 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+     Creating library ..\lib\ImageMagickObject.lib and object ..\lib\ImageMagickObject.exp
+  Microsoft (R) 32b/64b MIDL Compiler Version 7.00.0555 
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  Processing .\vc140.idl
+  vc140.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\MsHTML.idl
+  MsHTML.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\ocidl.idl
+  ocidl.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\oleidl.idl
+  oleidl.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\objidl.idl
+  objidl.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\unknwn.idl
+  unknwn.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\wtypes.idl
+  wtypes.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\basetsd.h
+  basetsd.h
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\guiddef.h
+  guiddef.h
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\oaidl.idl
+  oaidl.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\servprov.idl
+  servprov.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\urlmon.idl
+  urlmon.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\msxml.idl
+  msxml.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\dimm.idl
+  dimm.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\shtypes.idl
+  shtypes.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\dispex.idl
+  dispex.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\MsHtmHst.idl
+  MsHtmHst.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\docobj.idl
+  docobj.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\ExDisp.idl
+  ExDisp.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\ObjSafe.idl
+  ObjSafe.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\comadmin.idl
+  comadmin.idl
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\sal.h(2866): warning C4005: '__useHeader': macro redefinition
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\sal_supp.h(57): note: see previous definition of '__useHeader'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\sal.h(2876): warning C4005: '__on_failure': macro redefinition
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\specstrings_supp.h(77): note: see previous definition of '__on_failure'
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\transact.idl
+  transact.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\txcoord.idl
+  txcoord.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\oaidl.acf
+  oaidl.acf
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\ocidl.acf
+  ocidl.acf
+  COM_ImageMagickObject_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\ImageMagickObject\..\bin\ImageMagickObject.dll

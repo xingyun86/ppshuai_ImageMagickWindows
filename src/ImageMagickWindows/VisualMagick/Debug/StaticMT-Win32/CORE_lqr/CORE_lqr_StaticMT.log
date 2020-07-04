@@ -1,0 +1,13 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  lqr_carver.c
+  lqr_carver_bias.c
+  lqr_carver_list.c
+  lqr_carver_rigmask.c
+  lqr_cursor.c
+  lqr_energy.c
+  lqr_gradient.c
+  lqr_progress.c
+  lqr_rwindow.c
+  lqr_vmap.c
+  lqr_vmap_list.c
+  CORE_lqr_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\lqr\..\lib\CORE_DB_lqr_.lib

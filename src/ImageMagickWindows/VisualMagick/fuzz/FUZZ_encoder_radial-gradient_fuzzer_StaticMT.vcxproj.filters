@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\ImageMagick\Magick++\fuzz\encoder_radial-gradient_fuzzer.cc">
+      <Filter>Magick++\fuzz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\fuzz\main.cc">
+      <Filter>Magick++\fuzz</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Magick++\fuzz">
+      <UniqueIdentifier>{2DC40FBE-C590-4DF3-8551-41B8732F2841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Magick++">
+      <UniqueIdentifier>{39FDDB53-2416-4391-A641-D4B94B119E1A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

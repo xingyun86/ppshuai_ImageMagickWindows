@@ -1,0 +1,139 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  accelerate.c
+  animate.c
+  annotate.c
+  artifact.c
+  attribute.c
+  blob.c
+  cache-view.c
+  cache.c
+D:\imagemagick-windows\ImageMagick\MagickCore\attribute.c(459): warning C4456: declaration of 'p' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\attribute.c(409): note: see declaration of 'p'
+  channel.c
+D:\imagemagick-windows\ImageMagick\MagickCore\attribute.c(678): warning C4701: potentially uninitialized local variable 'edge_background' used
+  cipher.c
+  client.c
+  coder.c
+  color.c
+  colormap.c
+  colorspace.c
+  compare.c
+  composite.c
+  compress.c
+  configure.c
+D:\imagemagick-windows\ImageMagick\MagickCore\compare.c(1443): warning C4456: declaration of 'i' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\compare.c(1389): note: see declaration of 'i'
+  constitute.c
+  decorate.c
+  delegate.c
+  deprecate.c
+  display.c
+D:\imagemagick-windows\ImageMagick\MagickCore\decorate.c(289): warning C4456: declaration of 'x' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\decorate.c(195): note: see declaration of 'x'
+  distort.c
+  distribute-cache.c
+  draw.c
+  effect.c
+D:\imagemagick-windows\ImageMagick\MagickCore\distort.c(2550): warning C4456: declaration of 'q' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\distort.c(2498): note: see declaration of 'q'
+  enhance.c
+  exception.c
+D:\imagemagick-windows\ImageMagick\MagickCore\draw.c(3430): warning C4456: declaration of 'bounds' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\draw.c(2485): note: see declaration of 'bounds'
+D:\imagemagick-windows\ImageMagick\MagickCore\draw.c(7112): warning C4100: 'image': unreferenced formal parameter
+  feature.c
+D:\imagemagick-windows\ImageMagick\MagickCore\effect.c(285): warning C4456: declaration of 'i' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\effect.c(156): note: see declaration of 'i'
+  fourier.c
+  fx.c
+  gem.c
+  geometry.c
+  histogram.c
+D:\imagemagick-windows\ImageMagick\MagickCore\fx.c(748): warning C4456: declaration of 'status' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\fx.c(571): note: see declaration of 'status'
+  identify.c
+  image-view.c
+  image.c
+  layer.c
+D:\imagemagick-windows\ImageMagick\MagickCore\identify.c(1284): warning C4456: declaration of 'value' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\identify.c(498): note: see declaration of 'value'
+  linked-list.c
+  list.c
+  locale.c
+  log.c
+  magic.c
+  magick.c
+  matrix.c
+  memory.c
+  mime.c
+  module.c
+  monitor.c
+D:\imagemagick-windows\ImageMagick\MagickCore\memory.c(1024): warning C4310: cast truncates constant value
+  montage.c
+  morphology.c
+D:\imagemagick-windows\ImageMagick\MagickCore\module.c(1634): warning C4100: 'exception': unreferenced formal parameter
+  nt-base.c
+  nt-feature.c
+  opencl.c
+  option.c
+  paint.c
+  pixel.c
+  policy.c
+  prepress.c
+  profile.c
+  property.c
+  quantize.c
+  quantum-export.c
+  quantum-import.c
+D:\imagemagick-windows\ImageMagick\MagickCore\property.c(3952): warning C4456: declaration of 'value' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\property.c(3911): note: see declaration of 'value'
+  quantum.c
+D:\imagemagick-windows\ImageMagick\MagickCore\quantize.c(2483): warning C4456: declaration of 'colors' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\quantize.c(2449): note: see declaration of 'colors'
+  random.c
+D:\imagemagick-windows\ImageMagick\MagickCore\quantum-export.c(3912): warning C4456: declaration of 'q' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\quantum-export.c(3883): note: see declaration of 'q'
+  registry.c
+  resample.c
+  resize.c
+D:\imagemagick-windows\ImageMagick\MagickCore\random.c(483): warning C4456: declaration of 'seconds' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\random.c(360): note: see declaration of 'seconds'
+  resource.c
+  segment.c
+  semaphore.c
+D:\imagemagick-windows\ImageMagick\MagickCore\resize.c(2463): warning C4456: declaration of 'offsets' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\resize.c(2441): note: see declaration of 'offsets'
+D:\imagemagick-windows\ImageMagick\MagickCore\resize.c(2516): warning C4100: 'source': unreferenced formal parameter
+  shear.c
+  signature.c
+  splay-tree.c
+  static.c
+  statistic.c
+  stream.c
+  string.c
+  thread.c
+D:\imagemagick-windows\ImageMagick\MagickCore\statistic.c(563): warning C4456: declaration of 'next' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\statistic.c(478): note: see declaration of 'next'
+D:\imagemagick-windows\ImageMagick\MagickCore\statistic.c(648): warning C4090: 'function': different 'const' qualifiers
+D:\imagemagick-windows\ImageMagick\MagickCore\statistic.c(799): warning C4090: 'function': different 'const' qualifiers
+  threshold.c
+  timer.c
+  token.c
+  transform.c
+  type.c
+D:\imagemagick-windows\ImageMagick\MagickCore\threshold.c(1984): warning C4456: declaration of 'i' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\threshold.c(1900): note: see declaration of 'i'
+D:\imagemagick-windows\ImageMagick\MagickCore\token.c(249): warning C4456: declaration of 'q' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\token.c(182): note: see declaration of 'q'
+  utility.c
+  version.c
+  vision.c
+  visual-effects.c
+  xml-tree.c
+  xwindow.c
+D:\imagemagick-windows\ImageMagick\MagickCore\vision.c(648): warning C4456: declaration of 'component_view' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\vision.c(137): note: see declaration of 'component_view'
+D:\imagemagick-windows\ImageMagick\MagickCore\visual-effects.c(849): warning C4456: declaration of 'v' hides previous local declaration
+  D:\imagemagick-windows\ImageMagick\MagickCore\visual-effects.c(755): note: see declaration of 'v'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  CORE_MagickCore_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\MagickCore\..\lib\CORE_DB_MagickCore_.lib

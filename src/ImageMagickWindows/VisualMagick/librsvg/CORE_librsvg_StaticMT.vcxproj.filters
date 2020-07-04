@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\librsvg\librsvg-enum-types.c" />
+    <ClCompile Include="..\..\librsvg\librsvg-features.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-base-file-util.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-base.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-cairo-clip.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-cairo-draw.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-cairo-render.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-cond.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-css.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-defs.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-filter.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-gobject.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-image.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-io.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-marker.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-mask.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-paint-server.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-path.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-shapes.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-size-callback.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-structure.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-styles.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-text.c" />
+    <ClCompile Include="..\..\librsvg\rsvg-xml.c" />
+    <ClCompile Include="..\..\librsvg\rsvg.c" />
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-animation.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-buffer-queue.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-data.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-enum-types.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-io.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-loader.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-marshal.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-pixdata.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-scale.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-scaled-anim.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-simple-anim.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-util.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixdata.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-ani-animation.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-ani.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-bmp.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-gif-animation.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-gif.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-icns.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-ico.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-jasper.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-jpeg.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-png.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-pnm.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-qtif.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-tga.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-tiff.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-xbm.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-xpm.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\pixops\pixops.c">
+      <Filter>gdk-pixbuf\gdk-pixbuf\pixops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\librsvg\gdk-pixbuf-loader\io-svg.c">
+      <Filter>gdk-pixbuf-loader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\librsvg\config.h" />
+    <CLInclude Include="..\..\librsvg\librsvg-enum-types.h" />
+    <CLInclude Include="..\..\librsvg\librsvg-features.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-cairo-clip.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-cairo-draw.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-cairo-render.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-cairo.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-compat.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-css.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-defs.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-filter.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-image.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-io.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-marker.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-mask.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-paint-server.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-path.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-private.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-shapes.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-size-callback.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-structure.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-styles.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-text.h" />
+    <CLInclude Include="..\..\librsvg\rsvg-xml.h" />
+    <CLInclude Include="..\..\librsvg\rsvg.h" />
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\config.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-animation.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-autocleanups.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-buffer-queue-private.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-core.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-enum-types.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-features.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-io.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-loader.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-macros.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-marshal.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-private.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-scaled-anim.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-simple-anim.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf-transform.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixbuf.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\gdk-pixdata.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-ani-animation.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-gdip-native.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-gdip-propertytags.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\io-gif-animation.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\xpm-color-table.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\pixops\pixops-internal.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf\pixops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\librsvg\gdk-pixbuf\gdk-pixbuf\pixops\pixops.h">
+      <Filter>gdk-pixbuf\gdk-pixbuf\pixops</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="gdk-pixbuf\gdk-pixbuf">
+      <UniqueIdentifier>{A0CA6642-5755-46D7-A556-B225247E16EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gdk-pixbuf">
+      <UniqueIdentifier>{DDBCD88A-7E3D-40F9-9F09-8DEA640C45C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gdk-pixbuf\gdk-pixbuf\pixops">
+      <UniqueIdentifier>{573B5566-ED14-4A8F-A4EF-3CD81FAD1236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gdk-pixbuf-loader">
+      <UniqueIdentifier>{6D444E7C-2F89-42D9-8607-D8834BE53E16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\librsvg\ImageMagick\Resource.rc" />
+  </ItemGroup>
+</Project>

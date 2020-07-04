@@ -1,0 +1,6 @@
+[INCLUDES]
+..\..\exr\openexr
+..\..\exr\openexr\IlmImf
+
+[DEPENDENCIES]
+exr

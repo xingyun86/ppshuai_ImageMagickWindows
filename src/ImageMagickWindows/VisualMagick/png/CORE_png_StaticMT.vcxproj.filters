@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\png\png.c" />
+    <ClCompile Include="..\..\png\pngerror.c" />
+    <ClCompile Include="..\..\png\pngget.c" />
+    <ClCompile Include="..\..\png\pngmem.c" />
+    <ClCompile Include="..\..\png\pngpread.c" />
+    <ClCompile Include="..\..\png\pngread.c" />
+    <ClCompile Include="..\..\png\pngrio.c" />
+    <ClCompile Include="..\..\png\pngrtran.c" />
+    <ClCompile Include="..\..\png\pngrutil.c" />
+    <ClCompile Include="..\..\png\pngset.c" />
+    <ClCompile Include="..\..\png\pngtrans.c" />
+    <ClCompile Include="..\..\png\pngwio.c" />
+    <ClCompile Include="..\..\png\pngwrite.c" />
+    <ClCompile Include="..\..\png\pngwtran.c" />
+    <ClCompile Include="..\..\png\pngwutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\png\png.h" />
+    <CLInclude Include="..\..\png\pngconf.h" />
+    <CLInclude Include="..\..\png\pngdebug.h" />
+    <CLInclude Include="..\..\png\pnginfo.h" />
+    <CLInclude Include="..\..\png\pnglibconf.h" />
+    <CLInclude Include="..\..\png\pngpriv.h" />
+    <CLInclude Include="..\..\png\pngstruct.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\png\ImageMagick\Resource.rc" />
+  </ItemGroup>
+</Project>

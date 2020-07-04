@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\exr\ilmbase\half\half.cpp">
+      <Filter>ilmbase\half</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\Iex\IexBaseExc.cpp">
+      <Filter>ilmbase\Iex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\Iex\IexThrowErrnoExc.cpp">
+      <Filter>ilmbase\Iex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThread.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadMutex.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadMutexPosix.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadMutexWin32.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadPool.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadPosix.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphore.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphoreOSX.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphorePosix.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphorePosixCompat.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphoreWin32.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadWin32.cpp">
+      <Filter>ilmbase\IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathColorAlgo.cpp">
+      <Filter>ilmbase\IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathExc.cpp">
+      <Filter>ilmbase\IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathFun.cpp">
+      <Filter>ilmbase\IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathMatrixAlgo.cpp">
+      <Filter>ilmbase\IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathRandom.cpp">
+      <Filter>ilmbase\IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathVec.cpp">
+      <Filter>ilmbase\IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\dwaLookups.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfAcesFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfB44Compressor.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfBoxAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfChannelList.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfChannelListAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfChromaticities.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfChromaticitiesAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfCompositeDeepScanLine.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfCompressionAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfCompressor.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfConvert.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfCRgbaFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepCompositing.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepFrameBuffer.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepImageStateAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineInputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineInputPart.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineOutputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineOutputPart.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepTiledInputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepTiledInputPart.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepTiledOutputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepTiledOutputPart.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDoubleAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDwaCompressor.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfEnvmap.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfEnvmapAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfFastHuf.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfFloatAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfFloatVectorAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfFrameBuffer.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfFramesPerSecond.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfGenericInputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfGenericOutputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfHeader.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfHuf.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfInputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfInputPart.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfInputPartData.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfIntAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfIO.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfKeyCode.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfKeyCodeAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfLineOrderAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfLut.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfMatrixAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfMisc.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfMultiPartInputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfMultiPartOutputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfMultiView.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfOpaqueAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfOutputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfOutputPart.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfOutputPartData.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfPartType.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfPizCompressor.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfPreviewImage.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfPreviewImageAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfPxr24Compressor.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRational.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRationalAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRgbaFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRgbaYca.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRle.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRleCompressor.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfScanLineInputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfStandardAttributes.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfStdIO.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfStringAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfStringVectorAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfSystemSpecific.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTestFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfThreading.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTileDescriptionAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledInputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledInputPart.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledMisc.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledOutputFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledOutputPart.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledRgbaFile.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTileOffsets.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTimeCode.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTimeCodeAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfVecAttribute.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfVersion.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfWav.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfZip.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfZipCompressor.cpp">
+      <Filter>openexr\IlmImf</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\exr\ilmbase\IlmBaseConfig.h">
+      <Filter>ilmbase</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\half\eLut.h">
+      <Filter>ilmbase\half</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\half\half.h">
+      <Filter>ilmbase\half</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\half\halfExport.h">
+      <Filter>ilmbase\half</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\half\halfFunction.h">
+      <Filter>ilmbase\half</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\half\halfLimits.h">
+      <Filter>ilmbase\half</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\half\toFloat.h">
+      <Filter>ilmbase\half</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\Iex\Iex.h">
+      <Filter>ilmbase\Iex</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\Iex\IexBaseExc.h">
+      <Filter>ilmbase\Iex</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\Iex\IexErrnoExc.h">
+      <Filter>ilmbase\Iex</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\Iex\IexExport.h">
+      <Filter>ilmbase\Iex</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\Iex\IexForward.h">
+      <Filter>ilmbase\Iex</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\Iex\IexMacros.h">
+      <Filter>ilmbase\Iex</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\Iex\IexMathExc.h">
+      <Filter>ilmbase\Iex</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\Iex\IexNamespace.h">
+      <Filter>ilmbase\Iex</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\Iex\IexThrowErrnoExc.h">
+      <Filter>ilmbase\Iex</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IlmThread\IlmThread.h">
+      <Filter>ilmbase\IlmThread</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadExport.h">
+      <Filter>ilmbase\IlmThread</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadForward.h">
+      <Filter>ilmbase\IlmThread</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadMutex.h">
+      <Filter>ilmbase\IlmThread</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadNamespace.h">
+      <Filter>ilmbase\IlmThread</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadPool.h">
+      <Filter>ilmbase\IlmThread</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphore.h">
+      <Filter>ilmbase\IlmThread</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathBox.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathBoxAlgo.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathColor.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathColorAlgo.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathEuler.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathExc.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathExport.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathForward.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathFrame.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathFrustum.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathFrustumTest.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathFun.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathGL.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathGLU.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathHalfLimits.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathInt64.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathInterval.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathLimits.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathLine.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathLineAlgo.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathMath.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathMatrix.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathMatrixAlgo.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathNamespace.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathPlane.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathPlatform.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathQuat.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathRandom.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathRoots.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathShear.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathSphere.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathVec.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\ilmbase\IMath\ImathVecAlgo.h">
+      <Filter>ilmbase\IMath</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\OpenEXRConfig.h">
+      <Filter>openexr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\OpenEXRConfigInternal.h">
+      <Filter>openexr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\b44ExpLogTable.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\dwaLookups.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfAcesFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfArray.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfAutoArray.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfB44Compressor.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfBoxAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfChannelList.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfChannelListAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfCheckedArithmetic.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfChromaticities.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfChromaticitiesAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfCompositeDeepScanLine.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfCompression.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfCompressionAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfCompressor.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfConvert.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfCRgbaFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepCompositing.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepFrameBuffer.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepImageState.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepImageStateAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineInputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineInputPart.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineOutputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineOutputPart.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepTiledInputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepTiledInputPart.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepTiledOutputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDeepTiledOutputPart.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDoubleAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDwaCompressor.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfDwaCompressorSimd.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfEnvmap.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfEnvmapAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfExport.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfFastHuf.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfFloatAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfFloatVectorAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfForward.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfFrameBuffer.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfFramesPerSecond.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfGenericInputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfGenericOutputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfHeader.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfHuf.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfInputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfInputPart.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfInputPartData.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfInputStreamMutex.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfInt64.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfIntAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfIO.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfKeyCode.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfKeyCodeAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfLineOrder.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfLineOrderAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfLut.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfMatrixAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfMisc.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfMultiPartInputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfMultiPartOutputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfMultiView.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfName.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfNamespace.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfOpaqueAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfOptimizedPixelReading.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfOutputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfOutputPart.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfOutputPartData.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfOutputStreamMutex.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfPartHelper.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfPartType.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfPixelType.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfPizCompressor.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfPreviewImage.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfPreviewImageAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfPxr24Compressor.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfRational.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfRationalAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfRgba.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfRgbaFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfRgbaYca.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfRle.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfRleCompressor.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfScanLineInputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfSimd.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfStandardAttributes.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfStdIO.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfStringAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfStringVectorAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfSystemSpecific.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTestFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfThreading.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTileDescription.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTileDescriptionAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTiledInputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTiledInputPart.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTiledMisc.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTiledOutputFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTiledOutputPart.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTiledRgbaFile.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTileOffsets.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTimeCode.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfTimeCodeAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfVecAttribute.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfVersion.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfWav.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfXdr.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfZip.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\exr\openexr\IlmImf\ImfZipCompressor.h">
+      <Filter>openexr\IlmImf</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ilmbase\half">
+      <UniqueIdentifier>{EC1C1E4C-F9D6-4222-BB55-1AEAF3EFB4F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ilmbase">
+      <UniqueIdentifier>{C3F35508-BDF3-4FBF-B1F9-0EC8B499B460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ilmbase\Iex">
+      <UniqueIdentifier>{8021E33C-4196-45DD-99C1-3189D99AF5EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ilmbase\IlmThread">
+      <UniqueIdentifier>{0C8D7381-4530-413F-9E22-4EA078127C3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ilmbase\IMath">
+      <UniqueIdentifier>{4401ABCD-AE82-420F-A6FC-5C78155B3569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openexr\IlmImf">
+      <UniqueIdentifier>{16B20590-E610-4046-BC14-6ECF272888A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openexr">
+      <UniqueIdentifier>{1A8CB019-FC4F-409B-A2E8-4858A66ABB8D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\exr\openexr\ImageMagick\Resource.rc" />
+  </ItemGroup>
+</Project>

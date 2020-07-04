@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\libheif\libheif\bitstream.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\box.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\color_conversion_fuzzer.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\error.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\heif.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\heif_avif.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\heif_colorconversion.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\heif_context.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\heif_decoder_aom.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\heif_decoder_libde265.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\heif_file.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\heif_hevc.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\heif_image.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\heif_plugin.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libheif\libheif\heif_plugin_registry.cc">
+      <Filter>libheif</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\libheif\libheif\bitstream.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\box.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\error.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_api_structs.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_avif.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_colorconversion.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_context.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_cxx.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_decoder_aom.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_decoder_libde265.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_emscripten.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_file.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_hevc.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_image.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_limits.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_plugin.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_plugin_registry.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\heif_version.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libheif\libheif\logging.h">
+      <Filter>libheif</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="libheif">
+      <UniqueIdentifier>{1FFE721A-FD66-41D0-95B7-D49FF4387F87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

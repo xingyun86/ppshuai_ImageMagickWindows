@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_libxml</ProjectName>
+    <ProjectGuid>{CAF6A110-97C6-4BA5-BCAB-7BA77294AC21}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CORE_DB_libxml_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CORE_RL_libxml_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Debug\StaticMT-Win32\CORE_libxml\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Release\StaticMT-Win32\CORE_libxml\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFile>..\bin\CORE_DB_libxml_.pdb</ProgramDatabaseFile>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\libxml;..\..\libxml\include;..\..\libxml\include\libxml;..\..\zlib;..\..\VisualMagick\OpenCL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;LIBXML_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X86;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFile>..\bin\CORE_RL_libxml_.pdb</ProgramDatabaseFile>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>;..\..\libxml;..\..\libxml\include;..\..\libxml\include\libxml;..\..\zlib;..\..\VisualMagick\OpenCL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;LIBXML_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X86;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libxml\buf.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\c14n.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\catalog.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\chvalid.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\debugXML.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\dict.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\DOCBparser.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\encoding.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\entities.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\error.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\globals.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\hash.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\HTMLparser.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\HTMLtree.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\legacy.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\list.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\parser.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\parserInternals.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\pattern.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\relaxng.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\SAX.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\SAX2.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\schematron.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\threads.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\tree.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\uri.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\valid.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xinclude.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xlink.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xmlIO.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xmlmemory.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xmlmodule.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xmlreader.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xmlregexp.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xmlsave.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xmlschemas.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xmlschemastypes.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xmlstring.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xmlunicode.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xmlwriter.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xpointer.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\libxml\xzlib.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libxml\buf.h" />
+    <ClInclude Include="..\..\libxml\config.h" />
+    <ClInclude Include="..\..\libxml\elfgcchack.h" />
+    <ClInclude Include="..\..\libxml\enc.h" />
+    <ClInclude Include="..\..\libxml\libxml.h" />
+    <ClInclude Include="..\..\libxml\save.h" />
+    <ClInclude Include="..\..\libxml\timsort.h" />
+    <ClInclude Include="..\..\libxml\triodef.h" />
+    <ClInclude Include="..\..\libxml\triop.h" />
+    <ClInclude Include="..\..\libxml\xzlib.h" />
+    <ClInclude Include="..\..\libxml\include\win32config.h" />
+    <ClInclude Include="..\..\libxml\include\wsockcompat.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\c14n.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\catalog.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\chvalid.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\debugXML.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\dict.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\DOCBparser.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\encoding.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\entities.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\globals.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\hash.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\HTMLparser.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\HTMLtree.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\list.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\parser.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\parserInternals.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\pattern.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\relaxng.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\SAX.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\SAX2.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\schemasInternals.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\schematron.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\threads.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\tree.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\uri.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\valid.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xinclude.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xlink.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlautomata.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlerror.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlexports.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlIO.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlmemory.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlmodule.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlreader.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlregexp.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlsave.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlschemas.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlschemastypes.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlstring.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlunicode.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlversion.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xmlwriter.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xpathInternals.h" />
+    <ClInclude Include="..\..\libxml\include\libxml\xpointer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\libxml\ImageMagick\Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\zlib\CORE_zlib_StaticMT.vcxproj">
+      <Project>{6CD57906-81D9-4FCB-8780-D9404310A2E9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

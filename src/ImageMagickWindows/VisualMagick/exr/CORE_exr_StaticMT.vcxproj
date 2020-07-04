@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_exr</ProjectName>
+    <ProjectGuid>{2FC179D7-4EF8-474D-B391-D1B9DB841399}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CORE_DB_exr_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CORE_RL_exr_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Debug\StaticMT-Win32\CORE_exr\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Release\StaticMT-Win32\CORE_exr\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFile>..\bin\CORE_DB_exr_.pdb</ProgramDatabaseFile>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\exr\ilmbase;..\..\exr\ilmbase\config.windows;..\..\exr\ilmbase\half;..\..\exr\ilmbase\Iex;..\..\exr\ilmbase\IlmThread;..\..\exr\ilmbase\IMath;..\..\exr\openexr;..\..\exr\openexr\config.windows;..\..\exr\openexr\IlmImf;..\..\zlib;..\..\VisualMagick\OpenCL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;HALF_EXPORTS;IEX_EXPORTS;ILMIMF_EXPORTS;ILMTHREAD_EXPORTS;IMATH_EXPORTS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X86;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFile>..\bin\CORE_RL_exr_.pdb</ProgramDatabaseFile>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>;..\..\exr\ilmbase;..\..\exr\ilmbase\config.windows;..\..\exr\ilmbase\half;..\..\exr\ilmbase\Iex;..\..\exr\ilmbase\IlmThread;..\..\exr\ilmbase\IMath;..\..\exr\openexr;..\..\exr\openexr\config.windows;..\..\exr\openexr\IlmImf;..\..\zlib;..\..\VisualMagick\OpenCL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;HALF_EXPORTS;IEX_EXPORTS;ILMIMF_EXPORTS;ILMTHREAD_EXPORTS;IMATH_EXPORTS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X86;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\exr\ilmbase\half\half.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\Iex\IexBaseExc.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\Iex\IexThrowErrnoExc.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThread.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadMutex.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadMutexPosix.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadMutexWin32.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadPool.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadPosix.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphore.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphoreOSX.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphorePosix.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphorePosixCompat.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphoreWin32.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IlmThread\IlmThreadWin32.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathColorAlgo.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathExc.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathFun.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathMatrixAlgo.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathRandom.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\ilmbase\IMath\ImathVec.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\dwaLookups.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfAcesFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfB44Compressor.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfBoxAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfChannelList.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfChannelListAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfChromaticities.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfChromaticitiesAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfCompositeDeepScanLine.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfCompressionAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfCompressor.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfConvert.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfCRgbaFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepCompositing.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepFrameBuffer.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepImageStateAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineInputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineInputPart.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineOutputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineOutputPart.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepTiledInputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepTiledInputPart.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepTiledOutputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDeepTiledOutputPart.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDoubleAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfDwaCompressor.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfEnvmap.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfEnvmapAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfFastHuf.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfFloatAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfFloatVectorAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfFrameBuffer.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfFramesPerSecond.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfGenericInputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfGenericOutputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfHeader.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfHuf.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfInputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfInputPart.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfInputPartData.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfIntAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfIO.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfKeyCode.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfKeyCodeAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfLineOrderAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfLut.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfMatrixAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfMisc.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfMultiPartInputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfMultiPartOutputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfMultiView.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfOpaqueAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfOutputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfOutputPart.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfOutputPartData.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfPartType.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfPizCompressor.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfPreviewImage.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfPreviewImageAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfPxr24Compressor.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRational.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRationalAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRgbaFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRgbaYca.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRle.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfRleCompressor.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfScanLineInputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfStandardAttributes.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfStdIO.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfStringAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfStringVectorAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfSystemSpecific.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTestFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfThreading.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTileDescriptionAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledInputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledInputPart.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledMisc.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledOutputFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledOutputPart.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTiledRgbaFile.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTileOffsets.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTimeCode.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfTimeCodeAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfVecAttribute.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfVersion.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfWav.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfZip.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\exr\openexr\IlmImf\ImfZipCompressor.cpp">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\exr\ilmbase\IlmBaseConfig.h" />
+    <ClInclude Include="..\..\exr\ilmbase\half\eLut.h" />
+    <ClInclude Include="..\..\exr\ilmbase\half\half.h" />
+    <ClInclude Include="..\..\exr\ilmbase\half\halfExport.h" />
+    <ClInclude Include="..\..\exr\ilmbase\half\halfFunction.h" />
+    <ClInclude Include="..\..\exr\ilmbase\half\halfLimits.h" />
+    <ClInclude Include="..\..\exr\ilmbase\half\toFloat.h" />
+    <ClInclude Include="..\..\exr\ilmbase\Iex\Iex.h" />
+    <ClInclude Include="..\..\exr\ilmbase\Iex\IexBaseExc.h" />
+    <ClInclude Include="..\..\exr\ilmbase\Iex\IexErrnoExc.h" />
+    <ClInclude Include="..\..\exr\ilmbase\Iex\IexExport.h" />
+    <ClInclude Include="..\..\exr\ilmbase\Iex\IexForward.h" />
+    <ClInclude Include="..\..\exr\ilmbase\Iex\IexMacros.h" />
+    <ClInclude Include="..\..\exr\ilmbase\Iex\IexMathExc.h" />
+    <ClInclude Include="..\..\exr\ilmbase\Iex\IexNamespace.h" />
+    <ClInclude Include="..\..\exr\ilmbase\Iex\IexThrowErrnoExc.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IlmThread\IlmThread.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadExport.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadForward.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadMutex.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadNamespace.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadPool.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IlmThread\IlmThreadSemaphore.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathBox.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathBoxAlgo.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathColor.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathColorAlgo.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathEuler.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathExc.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathExport.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathForward.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathFrame.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathFrustum.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathFrustumTest.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathFun.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathGL.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathGLU.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathHalfLimits.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathInt64.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathInterval.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathLimits.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathLine.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathLineAlgo.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathMath.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathMatrix.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathMatrixAlgo.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathNamespace.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathPlane.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathPlatform.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathQuat.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathRandom.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathRoots.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathShear.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathSphere.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathVec.h" />
+    <ClInclude Include="..\..\exr\ilmbase\IMath\ImathVecAlgo.h" />
+    <ClInclude Include="..\..\exr\openexr\OpenEXRConfig.h" />
+    <ClInclude Include="..\..\exr\openexr\OpenEXRConfigInternal.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\b44ExpLogTable.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\dwaLookups.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfAcesFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfArray.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfAutoArray.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfB44Compressor.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfBoxAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfChannelList.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfChannelListAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfCheckedArithmetic.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfChromaticities.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfChromaticitiesAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfCompositeDeepScanLine.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfCompression.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfCompressionAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfCompressor.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfConvert.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfCRgbaFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepCompositing.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepFrameBuffer.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepImageState.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepImageStateAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineInputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineInputPart.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineOutputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepScanLineOutputPart.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepTiledInputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepTiledInputPart.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepTiledOutputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDeepTiledOutputPart.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDoubleAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDwaCompressor.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfDwaCompressorSimd.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfEnvmap.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfEnvmapAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfExport.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfFastHuf.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfFloatAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfFloatVectorAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfForward.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfFrameBuffer.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfFramesPerSecond.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfGenericInputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfGenericOutputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfHeader.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfHuf.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfInputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfInputPart.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfInputPartData.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfInputStreamMutex.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfInt64.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfIntAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfIO.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfKeyCode.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfKeyCodeAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfLineOrder.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfLineOrderAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfLut.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfMatrixAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfMisc.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfMultiPartInputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfMultiPartOutputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfMultiView.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfName.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfNamespace.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfOpaqueAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfOptimizedPixelReading.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfOutputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfOutputPart.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfOutputPartData.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfOutputStreamMutex.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfPartHelper.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfPartType.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfPixelType.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfPizCompressor.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfPreviewImage.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfPreviewImageAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfPxr24Compressor.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfRational.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfRationalAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfRgba.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfRgbaFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfRgbaYca.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfRle.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfRleCompressor.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfScanLineInputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfSimd.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfStandardAttributes.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfStdIO.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfStringAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfStringVectorAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfSystemSpecific.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTestFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfThreading.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTileDescription.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTileDescriptionAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTiledInputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTiledInputPart.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTiledMisc.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTiledOutputFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTiledOutputPart.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTiledRgbaFile.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTileOffsets.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTimeCode.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfTimeCodeAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfVecAttribute.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfVersion.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfWav.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfXdr.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfZip.h" />
+    <ClInclude Include="..\..\exr\openexr\IlmImf\ImfZipCompressor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\exr\openexr\ImageMagick\Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\zlib\CORE_zlib_StaticMT.vcxproj">
+      <Project>{6CD57906-81D9-4FCB-8780-D9404310A2E9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

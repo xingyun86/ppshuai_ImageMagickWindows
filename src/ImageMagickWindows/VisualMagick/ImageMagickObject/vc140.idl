@@ -1,0 +1,58 @@
+import "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\MsHTML.idl";
+import "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\dimm.idl";
+import "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\dispex.idl";
+import "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\MsHtmHst.idl";
+import "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\docobj.idl";
+import "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\ExDisp.idl";
+import "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\ObjSafe.idl";
+import "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\comadmin.idl";
+import "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\transact.idl";
+import "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\txcoord.idl";
+
+[
+	object,
+	uuid(7F670536-00AE-4EDF-B06F-13BD22B25624),
+	dual,
+	helpstring("IMagickImage Interface"),
+	pointer_default(unique)
+] 
+#line 97 "d:\\imagemagick-windows\\contrib\\win32\\atl7\\imagemagickobject\\imagemagickobject.cpp"
+interface IMagickImage : IDispatch {
+#line 100 "d:\\imagemagick-windows\\contrib\\win32\\atl7\\imagemagickobject\\imagemagickobject.cpp"
+	HRESULT  OnStartPage([in] IUnknown *piUnk);
+	HRESULT  OnEndPage();
+	[propget,id(1)] HRESULT  Count([out,retval] long *pVal);
+	[vararg,id(2)] HRESULT  Add([in,out] SAFEARRAY(VARIANT)* pArrayVar, [out,retval] VARIANT *pVar);
+	[id(3)] HRESULT  Remove([in] VARIANT varIndex);
+	[vararg,id(4)] HRESULT  Compare([in,out] SAFEARRAY(VARIANT)* pArrayVar, [out,retval] VARIANT *pVar);
+	[vararg,id(5)] HRESULT  Composite([in,out] SAFEARRAY(VARIANT)* pArrayVar, [out,retval] VARIANT *pVar);
+	[vararg,id(6)] HRESULT  Convert([in,out] SAFEARRAY(VARIANT)* pArrayVar, [out,retval] VARIANT *pVar);
+	[vararg,id(7)] HRESULT  Identify([in,out] SAFEARRAY(VARIANT)* pArrayVar, [out,retval] VARIANT *pVar);
+	[vararg,id(8)] HRESULT  Mogrify([in,out] SAFEARRAY(VARIANT)* pArrayVar, [out,retval] VARIANT *pVar);
+	[vararg,id(9)] HRESULT  Montage([in,out] SAFEARRAY(VARIANT)* pArrayVar, [out,retval] VARIANT *pVar);
+	[vararg,id(10)] HRESULT  Stream([in,out] SAFEARRAY(VARIANT)* pArrayVar, [out,retval] VARIANT *pVar);
+	[vararg,id(11)] HRESULT  TestHarness([in,out] SAFEARRAY(VARIANT)* pArrayVar, [out,retval] VARIANT *pVar);
+	[propget,id(-4)] HRESULT  _NewEnum([out,retval] LPUNKNOWN *pVal);
+	[propget,id(0)] HRESULT  Item([in] VARIANT varIndex, [out,retval] VARIANT *pVal);
+	[propget,id(14)] HRESULT  Messages([out,retval] VARIANT *pVal);
+};
+
+
+[ version(1.0), helpstring("ImageMagickObject 1.0 Type Library"), uuid(9aa0fc6a-63c7-3632-bd6b-7caf646e51a0) ]
+library ImageMagickObject
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(5630BE5A-3F5F-4BCA-A511-AD6A6386CAC1),
+		helpstring("MagickImage Class")
+	] 
+#line 161 "d:\\imagemagick-windows\\contrib\\win32\\atl7\\imagemagickobject\\imagemagickobject.cpp"
+	coclass MagickImage {
+		interface IMagickImage;
+	};
+
+}
+

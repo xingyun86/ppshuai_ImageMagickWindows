@@ -1,0 +1,17 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  bitstream.cc
+  box.cc
+  color_conversion_fuzzer.cc
+  error.cc
+  heif.cc
+  heif_avif.cc
+  heif_colorconversion.cc
+  heif_context.cc
+  heif_decoder_aom.cc
+  heif_decoder_libde265.cc
+  heif_file.cc
+  heif_hevc.cc
+  heif_image.cc
+  heif_plugin.cc
+  heif_plugin_registry.cc
+  CORE_libheif_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\libheif\..\lib\CORE_DB_libheif_.lib

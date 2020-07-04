@@ -1,0 +1,28 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  cr-additional-sel.c
+  cr-attr-sel.c
+  cr-cascade.c
+  cr-declaration.c
+  cr-doc-handler.c
+  cr-enc-handler.c
+  cr-fonts.c
+  cr-input.c
+  cr-num.c
+  cr-om-parser.c
+  cr-parser.c
+  cr-parsing-location.c
+  cr-prop-list.c
+  cr-pseudo.c
+  cr-rgb.c
+  cr-sel-eng.c
+  cr-selector.c
+  cr-simple-sel.c
+  cr-statement.c
+  cr-string.c
+  cr-style.c
+  cr-stylesheet.c
+  cr-term.c
+  cr-tknzr.c
+  cr-token.c
+  cr-utils.c
+  CORE_croco_StaticMT.vcxproj -> D:\imagemagick-windows\VisualMagick\croco\..\lib\CORE_DB_croco_.lib

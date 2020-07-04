@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\libraw\internal\dcraw_common.cpp">
+      <Filter>internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraw\internal\dcraw_fileio.cpp">
+      <Filter>internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraw\internal\demosaic_packs.cpp">
+      <Filter>internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraw\src\libraw_cxx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraw\src\libraw_c_api.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraw\src\libraw_datastream.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\libraw\internal\dcraw_defs.h">
+      <Filter>internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libraw\internal\dcraw_fileio_defs.h">
+      <Filter>internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libraw\internal\defines.h">
+      <Filter>internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libraw\internal\dmp_include.h">
+      <Filter>internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libraw\internal\libraw_const.h">
+      <Filter>internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libraw\internal\libraw_cxx_defs.h">
+      <Filter>internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libraw\internal\libraw_internal_funcs.h">
+      <Filter>internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libraw\internal\var_defines.h">
+      <Filter>internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\libraw\internal\x3f_tools.h">
+      <Filter>internal</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="internal">
+      <UniqueIdentifier>{4E1DEE84-DEC1-472E-866A-1C55CBCFFF32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{F4A22B09-582D-4AFB-AE68-91C6356A3BCF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
